@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local ou estrangeiro?</title>
+</head>
+<body>
+    <h1>Você é estrangeiro?</h1>
+    Digite o país que vc está vivendo: <input type="text" name="input-country" id="input-country">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar(){
+            var country = window.document.getElementById('input-country').value
+            if (country.toUpperCase() == 'BRASIL') {
+                res.innerText = 'Você é Brasileiro'
+            } else {
+                res.innerText = 'Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
